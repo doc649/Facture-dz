@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_dashboard" 
+        android:title="Tableau de bord" />
+    <item
+        android:id="@+id/navigation_invoices"
+        android:icon="@drawable/ic_invoices" 
+        android:title="Factures" />
+    <item
+        android:id="@+id/navigation_add_invoice_placeholder"
+        android:title="" 
+        android:enabled="false"/> 
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_settings" 
+        android:title="Paramètres" />
+</menu>
+

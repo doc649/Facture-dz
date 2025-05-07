@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.facturedz.ui.main.DashboardFragment"
+        android:label="Tableau de bord"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/invoiceListFragment"
+        android:name="com.example.facturedz.ui.main.InvoiceListFragment"
+        android:label="Factures"
+        tools:layout="@layout/fragment_invoice_list" >
+        <action
+            android:id="@+id/action_invoiceListFragment_to_invoiceDetailFragment"
+            app:destination="@id/invoiceDetailFragment" />
+    </fragment>
+
+    <activity
+        android:id="@+id/addEditInvoiceActivity"
+        android:name="com.example.facturedz.ui.addeditinvoice.AddEditInvoiceActivity"
+        android:label="Nouvelle Facture"
+        tools:layout="@layout/activity_add_edit_invoice" />
+
+    <fragment
+        android:id="@+id/invoiceDetailFragment"
+        android:name="com.example.facturedz.ui.invoicedetails.InvoiceDetailFragment"
+        android:label="Détail Facture"
+        tools:layout="@layout/fragment_invoice_detail">
+        <argument
+            android:name="invoiceId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.facturedz.ui.settings.SettingsFragment"
+        android:label="Paramètres"
+        tools:layout="@layout/fragment_settings" />
+
+    <activity
+        android:id="@+id/ocrCaptureActivity"
+        android:name="com.example.facturedz.ui.ocr.OcrCaptureActivity"
+        android:label="Scanner Facture"
+        tools:layout="@layout/activity_ocr_capture" />
+
+</navigation>
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Couleurs primaires de l'application Facture DZ -->
+    <color name="md_theme_light_primary">#00658E</color> <!-- Vert pétrole foncé / Bleu pétrole -->
+    <color name="md_theme_light_onPrimary">#FFFFFF</color> <!-- Blanc -->
+    <color name="md_theme_light_primaryContainer">#C7E7FF</color> <!-- Bleu clair pour conteneurs -->
+    <color name="md_theme_light_onPrimaryContainer">#001E2E</color>
+    
+    <color name="md_theme_light_secondary">#4F616E</color> <!-- Gris bleuté pour accents secondaires -->
+    <color name="md_theme_light_onSecondary">#FFFFFF</color>
+    <color name="md_theme_light_secondaryContainer">#D2E5F5</color>
+    <color name="md_theme_light_onSecondaryContainer">#0B1E29</color>
+    
+    <color name="md_theme_light_tertiary">#62597C</color>
+    <color name="md_theme_light_onTertiary">#FFFFFF</color>
+    <color name="md_theme_light_tertiaryContainer">#E8DDFF</color>
+    <color name="md_theme_light_onTertiaryContainer">#1E1635</color>
+    
+    <color name="md_theme_light_error">#BA1A1A</color>
+    <color name="md_theme_light_onError">#FFFFFF</color>
+    <color name="md_theme_light_errorContainer">#FFDAD6</color>
+    <color name="md_theme_light_onErrorContainer">#410002</color>
+    
+    <color name="md_theme_light_background">#FCFCFF</color> <!-- Fond général blanc -->
+    <color name="md_theme_light_onBackground">#1A1C1E</color>
+    <color name="md_theme_light_surface">#FCFCFF</color> <!-- Surface des cartes, etc. blanc -->
+    <color name="md_theme_light_onSurface">#1A1C1E</color>
+    <color name="md_theme_light_surfaceVariant">#DDE3EA</color> <!-- Variante de surface, ex: champs de texte -->
+    <color name="md_theme_light_onSurfaceVariant">#41484D</color>
+    <color name="md_theme_light_outline">#71787E</color>
+
+    <!-- Couleurs spécifiques demandées -->
+    <color name="facture_dz_white">#FFFFFF</color>
+    <color name="facture_dz_light_blue">#C7E7FF</color> <!-- Ou un bleu plus clair comme #E3F2FD -->
+    <color name="facture_dz_petroleum_green">#00658E</color> <!-- Peut être ajusté -->
+
+    <color name="facture_dz_warning_orange">#FFA500</color>
+    <color name="facture_dz_error_red">#D32F2F</color>
+
+</resources>
+
