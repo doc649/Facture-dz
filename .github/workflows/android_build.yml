@@ -20,17 +20,19 @@ jobs:
         distribution: 'temurin'
         cache: 'gradle'
 
+    # Le checkout place le contenu du repo à la racine du workspace.
+    # Si gradlew est dans 'FactureDZ_Project' à la racine du repo cloné:
     - name: Grant execute permission for gradlew
       run: chmod +x ./gradlew
-      working-directory: ./home/ubuntu/FactureDZ_Project # Maintenu car le checkout place le contenu du repo à la racine du workspace de l'action
+      working-directory: ./FactureDZ_Project # Ajusté pour pointer vers le dossier du projet Android
 
     - name: Build with Gradle
       run: ./gradlew assembleDebug --no-daemon
-      working-directory: ./home/ubuntu/FactureDZ_Project # Maintenu
+      working-directory: ./FactureDZ_Project # Ajusté pour pointer vers le dossier du projet Android
 
     - name: Upload APK artifact
-      uses: actions/upload-artifact@v4 # Mise à jour de v3 à v4
+      uses: actions/upload-artifact@v4
       with:
         name: facture-dz-debug-apk
-        path: ./home/ubuntu/FactureDZ_Project/app/build/outputs/apk/debug/app-debug.apk # Maintenu
+        path: ./FactureDZ_Project/app/build/outputs/apk/debug/app-debug.apk # Ajusté pour refléter la structure du projet
 
