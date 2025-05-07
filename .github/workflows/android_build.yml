@@ -22,15 +22,15 @@ jobs:
 
     - name: Grant execute permission for gradlew
       run: chmod +x ./gradlew
-      working-directory: ./home/ubuntu/FactureDZ_Project # Ajustez si la racine du projet est différente après décompression
+      working-directory: ./home/ubuntu/FactureDZ_Project # Maintenu car le checkout place le contenu du repo à la racine du workspace de l'action
 
     - name: Build with Gradle
       run: ./gradlew assembleDebug --no-daemon
-      working-directory: ./home/ubuntu/FactureDZ_Project # Ajustez si la racine du projet est différente après décompression
+      working-directory: ./home/ubuntu/FactureDZ_Project # Maintenu
 
     - name: Upload APK artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4 # Mise à jour de v3 à v4
       with:
         name: facture-dz-debug-apk
-        path: ./home/ubuntu/FactureDZ_Project/app/build/outputs/apk/debug/app-debug.apk # Ajustez le chemin si nécessaire
+        path: ./home/ubuntu/FactureDZ_Project/app/build/outputs/apk/debug/app-debug.apk # Maintenu
 
